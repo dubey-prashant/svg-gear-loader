@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+}
+
+.LoaderContainer {
+  .loader {
+    position: relative;
+    margin: 50px auto;
+    width: 100px;
+    height: 80px;
+  }
+
+  .gear {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    animation: spin 5s infinite;
+  }
+
+  .two {
+    left: 40px;
+    width: 80px;
+    height: 80px;
+    animation: spin-reverse 5s infinite;
+  }
+
+  .three {
+    top: 45px;
+    left: -10px;
+    width: 60px;
+    height: 60px;
+  }
+
+  @keyframes spin {
+    50% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes spin-reverse {
+    50% {
+      transform: rotate(-360deg);
+    }
+  }
+
+  .text {
+    color: lightgray;
+
+    font: {
+      size: 18px;
+      family: 'Open Sans', sans-serif;
+    }
+
+    text-align: center;
+  }
+
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
